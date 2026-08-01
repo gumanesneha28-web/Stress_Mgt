@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sign Up | Student Wellness Hub</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="bg-gradient-to-r from-indigo-700 via-blue-600 to-cyan-500 min-h-screen flex justify-center items-center">
+
+<div class="glass w-11/12 max-w-md p-8 rounded-3xl">
+
+<h1 class="text-3xl font-bold text-center text-white mb-6">
+Create Account
+</h1>
+
+<form id="signupForm" class="space-y-4">
+
+<div>
+<input
+type="text"
+id="name"
+placeholder="Full Name"
+class="w-full p-3 rounded-xl outline-none"
+required>
+</div>
+
+<div>
+<input
+type="email"
+id="email"
+placeholder="Email Address"
+class="w-full p-3 rounded-xl outline-none"
+required>
+</div>
+
+<div>
+<input
+type="tel"
+id="phone"
+placeholder="Phone Number"
+maxlength="10"
+class="w-full p-3 rounded-xl outline-none"
+required>
+</div>
+
+<div class="relative">
+
+<input
+type="password"
+id="password"
+placeholder="Password"
+class="w-full p-3 rounded-xl outline-none"
+required>
+
+<span
+onclick="togglePassword('password',this)"
+class="absolute right-4 top-3 cursor-pointer text-gray-600">
+
+<i class="fa-solid fa-eye"></i>
+
+</span>
+
+</div>
+
+<div class="relative">
+
+<input
+type="password"
+id="confirmPassword"
+placeholder="Confirm Password"
+class="w-full p-3 rounded-xl outline-none"
+required>
+
+<span
+onclick="togglePassword('confirmPassword',this)"
+class="absolute right-4 top-3 cursor-pointer text-gray-600">
+
+<i class="fa-solid fa-eye"></i>
+
+</span>
+
+</div>
+
+<button class="btn w-full">
+
+Create Account
+
+</button>
+
+</form>
+
+<p class="text-center text-white mt-5">
+
+Already have an account?
+
+<a href="login.html" class="text-cyan-300 font-semibold">
+Login
+</a>
+
+</p>
+
+</div>
+
+<script src="js/auth.js"></script>
+
+</body>
+</html>

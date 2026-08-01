@@ -1,0 +1,167 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    min-height:100vh;
+    overflow-x:hidden;
+}
+
+/* Glass Effect */
+.glass{
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,0.2);
+    box-shadow:0 8px 32px rgba(0,0,0,.2);
+}
+
+/* Buttons */
+.btn{
+    padding:14px 28px;
+    border:none;
+    border-radius:40px;
+    background:#06b6d4;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    background:#0891b2;
+}
+
+.btn2{
+    padding:14px 28px;
+    border:2px solid white;
+    border-radius:40px;
+    background:transparent;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn2:hover{
+    background:white;
+    color:#0f172a;
+}
+
+.glass-btn{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    border:none;
+    background:rgba(255,255,255,.2);
+    color:white;
+    cursor:pointer;
+    font-size:18px;
+    transition:.3s;
+}
+
+.glass-btn:hover{
+    transform:rotate(180deg);
+}
+
+/* Cards */
+.glass:hover{
+    transform:translateY(-8px);
+    transition:.4s;
+}
+
+/* Fade Animation */
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+section{
+    animation:fadeIn 1s ease;
+}
+
+/* Footer */
+footer{
+    background:rgba(0,0,0,.15);
+}
+
+/* Dark Theme */
+.dark{
+    background:#0f172a !important;
+}
+
+.dark .glass{
+    background:rgba(30,41,59,.5);
+}
+
+.dark footer{
+    background:#020617;
+}
+
+/* Responsive */
+@media (max-width:768px){
+
+    nav{
+        overflow: visible;
+        transition: none;
+    }
+
+    #mobileMenu{
+        width:100%;
+        background:rgba(255,255,255,0.12);
+        backdrop-filter:blur(15px);
+        border-radius:15px;
+        padding:15px;
+    }
+
+    #mobileMenu li{
+        width:100%;
+    }
+
+    #mobileMenu a{
+        display:block;
+        width:100%;
+        padding:12px;
+        text-align:center;
+    }
+
+    h2{
+        font-size:32px !important;
+    }
+
+    .btn,
+    .btn2{
+        width:100%;
+        margin-top:10px;
+    }
+
+h2{
+    font-size:32px !important;
+}
+
+.btn,
+.btn2{
+    width:100%;
+    margin-top:10px;
+}
+
+}

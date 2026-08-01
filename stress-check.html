@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stress Check | Student Wellness Hub</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="bg-gradient-to-r from-indigo-700 via-blue-600 to-cyan-500 min-h-screen">
+
+<div class="max-w-3xl mx-auto py-12 px-5">
+
+<div class="glass rounded-3xl p-8">
+
+<h1 class="text-4xl font-bold text-white text-center mb-8">
+🧠 Stress Assessment Quiz
+</h1>
+
+<p class="text-white text-center mb-8">
+Answer each question honestly.
+</p>
+
+<form id="quizForm">
+
+<div class="mb-6">
+<label class="text-white font-semibold">1. I feel stressed because of studies.</label>
+<select class="w-full mt-2 p-3 rounded-xl" name="q1">
+<option value="1">Never</option>
+<option value="2">Sometimes</option>
+<option value="3">Often</option>
+<option value="4">Always</option>
+</select>
+</div>
+
+<div class="mb-6">
+<label class="text-white font-semibold">2. I sleep less than 7 hours.</label>
+<select class="w-full mt-2 p-3 rounded-xl" name="q2">
+<option value="1">Never</option>
+<option value="2">Sometimes</option>
+<option value="3">Often</option>
+<option value="4">Always</option>
+</select>
+</div>
+
+<div class="mb-6">
+<label class="text-white font-semibold">3. I find it difficult to concentrate.</label>
+<select class="w-full mt-2 p-3 rounded-xl" name="q3">
+<option value="1">Never</option>
+<option value="2">Sometimes</option>
+<option value="3">Often</option>
+<option value="4">Always</option>
+</select>
+</div>
+
+<div class="mb-6">
+<label class="text-white font-semibold">4. I feel anxious before exams.</label>
+<select class="w-full mt-2 p-3 rounded-xl" name="q4">
+<option value="1">Never</option>
+<option value="2">Sometimes</option>
+<option value="3">Often</option>
+<option value="4">Always</option>
+</select>
+</div>
+
+<div class="mb-6">
+<label class="text-white font-semibold">5. I take regular breaks while studying.</label>
+<select class="w-full mt-2 p-3 rounded-xl" name="q5">
+<option value="4">Never</option>
+<option value="3">Sometimes</option>
+<option value="2">Often</option>
+<option value="1">Always</option>
+</select>
+</div>
+
+<button
+type="button"
+onclick="calculateStress()"
+class="btn w-full">
+Check Result
+</button>
+
+</form>
+
+<div id="result" class="hidden mt-8 glass rounded-2xl p-6 text-center">
+
+<h2 class="text-2xl font-bold text-white mb-3">
+Your Result
+</h2>
+
+<p id="scoreText" class="text-white text-xl"></p>
+
+<p id="advice" class="text-gray-200 mt-4"></p>
+
+</div>
+
+<div class="text-center mt-8">
+<a href="index.html" class="text-white underline">⬅ Back to Home</a>
+</div>
+
+</div>
+
+</div>
+
+<script src="js/quiz.js"></script>
+
+</body>
+</html>

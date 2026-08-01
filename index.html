@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Wellness Hub</title>
+
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-gradient-to-r from-indigo-700 via-blue-600 to-cyan-500 min-h-screen">
+
+<nav class="glass fixed top-5 left-0 right-0 mx-auto w-11/12 max-w-7xl rounded-2xl p-4 flex justify-between items-center z-50">
+
+    <h1 class="text-white text-xl lg:text-2xl font-bold whitespace-nowrap">
+        <i class="fa-solid fa-heart-pulse"></i>
+        Student Wellness Hub
+    </h1>
+
+    <ul class="hidden md:flex items-center gap-8 text-white font-medium">
+        <li><a href="index.html" class="hover:text-cyan-300 transition">Home</a></li>
+        <li><a href="stress-check.html" class="hover:text-cyan-300 transition">Stress Check</a></li>
+        <li><a href="planner.html" class="hover:text-cyan-300 transition">Planner</a></li>
+        <li><a href="timer.html" class="hover:text-cyan-300 transition">Pomodoro</a></li>
+        <li><a href="tips.html" class="hover:text-cyan-300 transition">Tips</a></li>
+        <li><a href="contact.html" class="hover:text-cyan-300 transition">Contact</a></li>
+    </ul>
+
+    <button id="themeBtn" class="glass-btn">
+        🌙
+    </button>
+
+</nav>
+
+<!-- Hero -->
+
+<section class="flex flex-col justify-center items-center text-center h-screen px-6">
+
+<div class="glass max-w-4xl p-12 rounded-3xl">
+
+<h2 class="text-5xl font-bold text-white mb-6">
+Your Mental Health Matters ❤️
+</h2>
+
+<p class="text-white text-lg leading-8">
+
+Manage stress, improve productivity and stay motivated with our free wellness tools.
+
+</p>
+
+<div class="mt-10 flex justify-center gap-5 flex-wrap">
+
+<a href="stress-check.html">
+
+<button class="btn">
+Take Stress Test
+</button>
+
+</a>
+
+<a href="planner.html">
+
+<button class="btn2">
+Study Planner
+</button>
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Features -->
+
+<section class="py-20 px-8">
+
+<h2 class="text-center text-4xl font-bold text-white mb-12">
+Our Features
+</h2>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div class="glass p-8 rounded-3xl">
+
+<i class="fa-solid fa-brain text-5xl text-cyan-300 mb-5"></i>
+
+<h3 class="text-white text-2xl font-semibold">
+Stress Quiz
+</h3>
+
+<p class="text-gray-200 mt-4">
+Simple questions to know your stress level.
+</p>
+
+</div>
+
+<div class="glass p-8 rounded-3xl">
+
+<i class="fa-solid fa-book text-5xl text-cyan-300 mb-5"></i>
+
+<h3 class="text-white text-2xl font-semibold">
+Study Planner
+</h3>
+
+<p class="text-gray-200 mt-4">
+Organize your daily study schedule.
+</p>
+
+</div>
+
+<div class="glass p-8 rounded-3xl">
+
+<i class="fa-solid fa-clock text-5xl text-cyan-300 mb-5"></i>
+
+<h3 class="text-white text-2xl font-semibold">
+Pomodoro Timer
+</h3>
+
+<p class="text-gray-200 mt-4">
+Stay focused using the Pomodoro technique.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Quote -->
+
+<section class="pb-20 px-8">
+
+<div class="glass p-10 rounded-3xl max-w-4xl mx-auto text-center">
+
+<h2 class="text-white text-3xl font-bold mb-5">
+Daily Motivation
+</h2>
+
+<p id="quote" class="text-xl text-white italic">
+Loading Quote...
+</p>
+
+</div>
+
+</section>
+
+<footer class="text-center text-white py-8">
+
+© 2026 Student Wellness Hub | Designed using HTML, Tailwind CSS & JavaScript
+
+</footer>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
